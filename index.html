@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>UNA - StyleGuide</title>
+    <style>
+        /* Define your styles here */
+        .selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <ul class="headerList">
+                <li><a href="#logo">
+                        <h5>LOGO</h5>
+                    </a></li>
+                <li><a href="#colours">
+                        <h5>COLOURS</h5>
+                    </a></li>
+                <li><a href="#typography">
+                        <h5>TYPOGRAPHY</h5>
+                    </a></li>
+                <li><a href="#layout">
+                        <h5>LAYOUT</h5>
+                    </a></li>
+                <li><a href="#iconography">
+                        <h5>ICONOGRAPHY</h5>
+                    </a></li>
+                <li><a href="#components">
+                        <h5>COMPONENTS</h5>
+                    </a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="section" id="logo">
+            <div class="logoSection">
+                <img src="./images/Asset 10.svg" style="width: 20rem;">
+                <div class="logoSubtitle">
+                    <h1 class="logoSubtitle">UNA Style Guide</h1>
+                    <h6>Team Members: </h6>
+                    <p>Jackie Truong</p>
+                    <p>Monica Nguyen</p>
+                    <p>Jumi Pham</p>
+                    <p> Nathan Schroter</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="colours">
+            <h1>Colours</h1>
+            <h3 class="subSection">Background and Text</h3>
+            <div class="colourBox" style="margin-top: 1rem;">
+                <div class="coloursContainer black" style="border: 2px solid var(--white);">
+                    <h3>Black</h3>
+                    <p>#1C181B - Dominant Background</p>
+                </div>
+                <div class="coloursContainer white">
+                    <h3 style="color: var(--black);">White</h3>
+                    <p style="color: var(--black);">#FFF9FF - Contrast - Primary Text</p>
+                </div>
+            </div>
+            <h3 class="subSection">Palette</h3>
+            <div class="colourBox" style="margin-top: 1rem;">
+                <div class="coloursContainer hotPink">
+                    <h3>Hot Pink</h3>
+                    <p>#1C181B - Primary</p>
+                </div>
+                <div class="coloursContainer darkPink">
+                    <h3>Dark Pink</h3>
+                    <p>#BC1954 - Primary</p>
+                </div>
+                <div class="coloursContainer pink">
+                    <h3 style="color: var(--black);">Pink</h3>
+                    <p style="color: var(--black);">#FFD4EB - Highlight</p>
+                </div>
+                <div class="coloursContainer green">
+                    <h3 style="color: var(--black);">Green</h3>
+                    <p style="color: var(--black);">#DAFD75 - Accent</p>
+                </div>
+                <div class="coloursContainer darkGreen">
+                    <h3 style="color: var(--black);">Green</h3>
+                    <p style="color: var(--black);">#5A750E - Accent</p>
+                </div>
+                <div class="coloursContainer lightGreen">
+                    <h3 style="color: var(--black);">Light Green</h3>
+                    <p style="color: var(--black);">#CEFC4D - Accent</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="section" id="typography">
+            <h1>Typography</h1>
+            <div class="font">
+                <p>Main Font Family: Raleway</p>
+                <h1>H1 3.815rem</h1>
+                <h2>H2 3.052rem</h2>
+                <h3>H3 2.441rem</h3>
+                <h4>H4 1.953rem</h4>
+                <h5>H5 1.563rem</h5>
+                <h6>H6 1.25rem</h6>
+                <p>Body Copy: 19px</p>
+                <p>Body Copy Small: 0.64rem</p>
+            </div>
+        </div>
+        <div class="section" id="layout">
+            <h1>Grid Layout</h1>
+            <p>Based on Figma Prototype Mockup</p>
+            <div class="gridBox">
+                <div class="gridSection">
+                    <h3>Column 1</h3>
+                    <img src="./images/4Col.PNG">
+                    <ul>
+                        <li>4 Columns</li>
+                        <li>9 px Margin</li>
+                        <li>9 px Gutter</li>
+                    </ul>
+                </div>
+                <div class="gridSection">
+                    <h3>Column 2</h3>
+                    <img src="./images/8Col.PNG">
+                    <ul>
+                        <li>8 Columns</li>
+                        <li>8 px Margin</li>
+                        <li>8 px Gutter</li>
+                    </ul>
+                </div>
+                <div class="gridSection">
+                    <h3>Rows</h3>
+                    <img src="./images/rows.PNG">
+                    <ul>
+                        <li>12 px height</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="iconography">
+            <h1>Iconography</h1>
+            <p>All Basic Iconography will use Hot Pink as a default state and will change to Pink when clicked</p>
+            <div class="iconsBox">
+                <div class="iconContainer">
+                    <h5>Home</h5>
+                    <img src="./images/Home.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Hamburger Menu</h5>
+                    <img src="./images/Burger.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Bookmark</h5>
+                    <img src="./images/Bookmark.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Post</h5>
+                    <img src="./images/Post.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Search</h5>
+                    <img src="./images/Edit.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Edit</h5>
+                    <img src="./images/Search.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Groups</h5>
+                    <img src="./images/Community.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Notifications</h5>
+                    <img src="./images/Notification.svg" class="icon">
+                </div>
+                <div class="iconContainer">
+                    <h5>Messaging</h5>
+                    <img src="./images/Messaging.svg" class="icon">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="components">
+            <h1>Components Samples</h1>
+            <p class="componentsSubtitle">Note: Hover styles also represent on click styles</p>
+            <div class="componentsGrid">
+                <div class="componentSection">
+                    <h4>Button</h4>
+                    <button class="buttonStyle">
+                        Button
+                    </button>
+                </div>
+                <div class="componentSection">
+                    <h4>Tab Menu</h4>
+                    <button class="buttonTab">Tab</button>
+                </div>
+                <div class="componentSection">
+                    <h4>Dialogue</h4>
+                    <div class="speech hotPink">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+                <div class="componentSection">
+                    <h4>Input Text</h4>
+                    <input type="text" class="inputText" placeholder="Input...">
+                </div>
+                <div class="componentSection">
+                    <h4>Error!</h4>
+                    <div>
+                        <p class="error">Error!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="margin: 10rem auto 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--white);">
+        UNA 2024
+    </footer>
+</body>
+<script>
+</script>
+
+</html>

@@ -1,0 +1,364 @@
+:root {
+    font-size: 19px;
+    --small: 0.64rem;
+    --h1: 3.815rem;
+    --h2: 3.052rem;
+    --h3: 2.441rem;
+    --h4: 1.953rem;
+    --h5: 1.563rem;
+    --h6: 1.25rem;
+
+    --black: #0E0D0D;
+    --white: #FFF9FF;
+
+    --dark-pink: #BC1954;
+    --hot-pink: #ED3C7C;
+    --pink: #FFD4EB;
+
+
+    --green: #CEFC4D;
+    --light-green: #DAFD75;
+    --dark-green: #5A750E;
+
+
+    /* scroll-behavior: smooth; */
+    font-family: "Raleway";
+    background-color: var(--black);
+}
+
+.darkPink {
+    background-color: var(--dark-pink);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.darkGreen {
+    background-color: var(--dark-green);
+}
+
+.lightGreen {
+    background-color: var(--light-green);
+}
+
+.hotPink {
+    background-color: var(--hot-pink);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.black {
+    background-color: var(--black);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    color: var(--white);
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+h4 {
+    font-size: var(--h4);
+}
+
+h5 {
+    font-size: var(--h5);
+}
+
+h6 {
+    font-size: var(--h6);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-top: 16rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subSection {
+    margin-top: 6rem;
+}
+
+header {
+    height: 5rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.headerContainer {
+    width: 70vw;
+    margin: auto;
+}
+
+.headerList {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logoSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.logoSubtitle {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoSubtitle * {
+    color: var(--white);
+    margin: 0.5rem;
+}
+
+.colourBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.coloursContainer {
+    border-radius: 5rem;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.font {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.font * {
+    margin: 1rem;
+}
+
+.gridBox {
+    display: flex;
+    gap: 10rem;
+    margin: 3rem;
+}
+
+.gridBox ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridBox * {
+    color: var(--white)
+}
+
+.gridSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconsBox {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5rem;
+    margin-top: 3rem;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer h5 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.icon {
+    width: 3rem;
+    margin: auto;
+}
+
+.componentsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.componentsGrid * {
+    margin: 1rem;
+}
+
+.componentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.componentsSubtitle {
+    margin-top: 1rem;
+}
+
+.buttonStyle {
+    width: 200px;
+    height: 70px;
+    border-radius: 3rem;
+    color: var(--white);
+    background-color: var(--hot-pink);
+    font-size: 1rem;
+}
+
+.buttonStyle:hover {
+    background-color: var(--white);
+    color: var(--dark-green);
+}
+
+
+.buttonTab {
+    display: flex;
+    width: 128px;
+    padding: 16px 66px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: var(--Hot-Pink, #ED3C7C);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.buttonTab:hover {
+    background-color: var(--white);
+    color: var(--dark-green);
+}
+
+.speech {
+    width: 392px;
+    background: var(--hot-pink);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+
+    display: inline-flex;
+    padding: 16px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.speech:before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    width: 32px;
+    height: 32px;
+    background: var(--hot-pink);
+    box-sizing: border-box;
+    transform: rotate(45deg) translate(-50%);
+    border-bottom: inherit;
+    border-right: inherit;
+    box-shadow: inherit;
+    transition: all 0.8s;
+}
+
+.inputText {
+    display: flex;
+    width: 250px;
+    padding: 10px 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+
+    border-radius: 16px;
+    border: 1px solid var(--Black-Tinted, #1C181B);
+    background: var(--Pink, #FFD4EB);
+}
+
+.inputText::placeholder {
+    font-family: "Raleway";
+    font-size: 1rem;
+    text-indent: 1rem;
+    margin: auto;
+}
+
+.inputText:focus {
+    font-family: "Raleway";
+    font-size: 1rem;
+    text-indent: 1rem;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.error {
+    display: flex;
+    width: 308px;
+    height: 36px;
+    padding: 2px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--Pink, #FFD4EB);
+
+    color: var(--hot-pink)
+}

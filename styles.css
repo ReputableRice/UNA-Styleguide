@@ -319,6 +319,39 @@ a {
     transition: all 0.8s;
 }
 
+.speechAlternate {
+    width: 392px;
+    background: var(--white);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 16px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.speechAlternate:before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    width: 32px;
+    height: 32px;
+    background: var(--white);
+    box-sizing: border-box;
+    transform: rotate(45deg) translate(-50%);
+    border-bottom: inherit;
+    border-right: inherit;
+    box-shadow: inherit;
+    transition: all 0.8s;
+}
+
+.speechAlternate p {
+    color: var(--black);
+}
+
 .inputText {
     display: flex;
     width: 250px;

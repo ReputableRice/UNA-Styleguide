@@ -46,8 +46,27 @@
     <main>
         <div class="section" id="logo">
             <div class="logoSection">
-                <img src="./images/Asset 10.svg" style="width: 20rem;">
+                <div class="logoExplanation">
+                    <div class="logoVersions">
+                        <img src="./images/Asset 10.svg" style="width: 15rem;">
+                    </div>
+                    <div class="logoDescription">
+                        <h4>Main Logo</h4>
+                        <p>UNA's logo comes across as a representation of qualities such as togetherness (or in other
+                            words,
+                            "una"), moderness, and recognizeability. These aspects are showcased through 2 main factors:
+                            colour and iconography. Our icon hosts a hotpink colour, declaring it's presence using
+                            vibrant, yet not overwhelming through sheer simplicity.
+                        </p>
+                        <p class="logoDescription"> Additionally, the inverted design is
+                            a combination of two themes of imagery, holding hands (which represents "togetherness") and
+                            a
+                            bunny (which reflects friendliness)</p>
+                    </div>
+
+                </div>
                 <div class="logoSubtitle">
+                    <h4>Variants</h4>
                     <h1 class="logoSubtitle">UNA Style Guide</h1>
                     <h6>Team Members: </h6>
                     <p>Jackie Truong</p>
@@ -56,6 +75,16 @@
                     <p> Nathan Schroter</p>
                 </div>
             </div>
+        </div>
+        <div class="logoVersions">
+            <h4>Variants</h4>
+            <br>
+            <div>
+                <img src="./images/Asset 10.svg" style="width: 10rem;">
+                <img src="./images/Black All.svg"
+                    style="width: 10rem; background-color: var(--white); border-radius: 8px; padding: 1rem;">
+            </div>
+
         </div>
         <div class="section" id="colours">
             <h1>Colours</h1>
@@ -114,11 +143,13 @@
         </div>
         <div class="section" id="layout">
             <h1>Grid Layout</h1>
-            <p>Based on Figma Prototype Mockup</p>
+            <br>
+            <p>Based on Figma Prototype Mockup utilizing iPhone Pro Max 14</p>
+            <p>The app be utilizing a single-column based design philosphy</p>
             <div class="gridBox">
                 <div class="gridSection">
                     <h4>Column 1</h4>
-                    <img src="./images/4Col.PNG">
+                    <img src="./images/4Col.PNG" style="height: 500px;">
                     <ul>
                         <li>4 Columns</li>
                         <li>9 px Margin</li>
@@ -127,7 +158,7 @@
                 </div>
                 <div class="gridSection">
                     <h4>Column 2</h4>
-                    <img src="./images/8Col.PNG">
+                    <img src="./images/8Col.PNG" style="height: 500px;">
                     <ul>
                         <li>8 Columns</li>
                         <li>8 px Margin</li>
@@ -136,9 +167,16 @@
                 </div>
                 <div class="gridSection">
                     <h4>Rows</h4>
-                    <img src="./images/rows.PNG">
+                    <img src="./images/rows.PNG" style="height: 500px;">
                     <ul>
                         <li>12 px height</li>
+                    </ul>
+                </div>
+                <div class="gridSection">
+                    <h4>Example</h4>
+                    <img src="./images/example.png" style="height: 500px;">
+                    <ul>
+                        <li>An example of our Layout</li>
                     </ul>
                 </div>
             </div>
@@ -146,12 +184,13 @@
         <div class="section" id="iconography">
             <h1>Iconography</h1>
             <br>
-            <p>All Basic Iconography will use Hot Pink as a default state and will change to Pink when clicked, </p>
+            <p>All Basic Iconography will use Hot Pink as a default state and will change to <span class="bold">Pink
+                    (#FFD4EB) Variable</span> when clicked, </p>
             <p>*These icons are not indicative of the amount, solely style</p>
             <div class="iconsBox">
                 <div class="iconContainer">
                     <h5>Home</h5>
-                    <img src="./images/Home.svg" class="icon">
+                    <img src="./images/Home.svg" class="icon iconHover"></img>
                 </div>
                 <div class="iconContainer">
                     <h5>Menu</h5>
@@ -201,7 +240,7 @@
         </div>
         <div class="section" id="components">
             <h1>Components Samples</h1>
-            <p class="componentsSubtitle">Note: Hover styles also represent on click styles</p>
+            <p class="componentsSubtitle">*Hover styles also represent highlight styles</p>
             <div class="componentsGrid">
                 <div class="componentSection">
                     <h4>Button</h4>
@@ -232,6 +271,14 @@
                         <p class="error">Error!</p>
                     </div>
                 </div>
+                <div class="componentSection">
+                    <h4>Chip</h4>
+                    <div>
+                        <button class="chipStyle">
+                            <div class="placeholderIcon"></div>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -240,4 +287,5 @@
         UNA 2024
     </footer>
 </body>
+
 </html>

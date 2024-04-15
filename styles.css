@@ -94,6 +94,12 @@ h6 {
     font-size: 16px;
 }
 
+.iconHover:hover {
+    fill: var(--pink) !important;
+    color: var(--pink);
+    cursor: pointer;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -149,6 +155,24 @@ a {
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+}
+
+.logoVersions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.logoExplanation {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+}
+
+.logoDescription {
+    margin: 2rem 0;
 }
 
 .logoSubtitle {
@@ -209,7 +233,7 @@ a {
 .gridSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -268,11 +292,14 @@ a {
     color: var(--white);
     background-color: var(--hot-pink);
     font-size: 1rem;
+
 }
 
 .buttonStyle:hover {
     background-color: var(--white);
     color: var(--dark-green);
+
+    animation: fade 0.2s;
 }
 
 
@@ -292,6 +319,8 @@ a {
 .buttonTab:hover {
     background-color: var(--white);
     color: var(--dark-green);
+    
+    animation: fade 0.2s;
 }
 
 .speech {
@@ -397,6 +426,35 @@ a {
     flex-shrink: 0;
     border-radius: 10px;
     background: var(--Pink, #FFD4EB);
-
     color: var(--hot-pink)
+}
+
+.chipStyle {
+    padding: 20px 60px;
+    border-radius: 3rem;
+    color: var(--white);
+    background-color: var(--hot-pink);
+    font-size: 1rem;
+}
+
+.chipStyle:hover {
+    background-color: var(--pink);
+    animation: fade 0.2s;
+}
+
+.placeholderIcon {
+    width: 25px;
+    height: 25px;
+    background-color: var(--black);
+    margin: auto;
+}
+
+@keyframes fade {
+    from {
+        background-color: var(--hot-pink);
+    }
+
+    to {
+        background-color: var(--pink);
+    }
 }

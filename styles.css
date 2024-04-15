@@ -113,7 +113,7 @@ main {
 }
 
 .section {
-    margin-top: 16rem;
+    margin-top: 10rem;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -219,7 +219,8 @@ a {
 }
 
 .gridBox {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 10rem;
     margin: 3rem;
 }
@@ -238,6 +239,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    row-gap: 1rem;
 }
 
 .iconsBox {
